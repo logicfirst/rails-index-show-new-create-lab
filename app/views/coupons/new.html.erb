@@ -1,0 +1,10 @@
+<h1>Create a New Coupon</h1>
+
+<%= form_for(@coupon) do |f|%>
+  <%= f.label :coupon_code%>
+  <%= f.text_field :coupon_code%><br>
+  <%= f.label :store%>
+  <%= f.text_field :store%><br>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Back to Index Page", coupons_path%>
